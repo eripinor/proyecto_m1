@@ -2,37 +2,38 @@
 
 Rellenadla y enseñádmela antes de empezar el EDA. Son diez minutos que os pueden ahorrar días.
 
-Nombre:
+Nombre: Erika
 
 ## 1. La idea
 
 Título del proyecto:
-(por ejemplo: "Los vinos que valen lo que cuestan")
+El arte del lúpulo: datos, estilos y valoraciones de las cervezas
 
 ¿Qué pregunta responde y a quién le interesa?
-(por ejemplo: "A un restaurante le interesa saber qué vinos tienen buena nota sin ser caros, para su carta")
+Este proyecto analiza qué características de una cerveza están más relacionadas con su valoración final, las diferencias entre los distintos estilos de cerveza y cómo influye la graduación alcohólica en las puntuaciones. 
+Puede interesar a los aficionados a la cerveza que quieran conocer mejor sus estilos y descubrir qué aspectos valoran más las personas que las prueban.
 
 ## 2. Los datos
 
 De dónde salen:
-- [ ] Kaggle
+- [X] Kaggle
 - [ ] Hugging Face
 - [ ] Datos míos (dónde los he encontrado):
 
-Enlace a los datos:
+Enlace a los datos: https://www.kaggle.com/rdoume/beerreviews
 
-Cuántas filas y columnas tienen:
+Cuántas filas y columnas tienen: 1.586.614 filas y 13 columnas.
 
 Qué es cada fila (un vino, un partido, una venta...):
 
 Comprobado (los requisitos están en 03_DATOS.md):
-- [ ] Son tabulares, en una sola tabla
-- [ ] No los hemos usado en clase
-- [ ] Tienen más de 1.000 filas
-- [ ] Tienen al menos 6 columnas, con números y con texto
-- [ ] Entiendo qué es cada columna
-- [ ] Hay algo que limpiar
-- [ ] Sé de dónde salen y se pueden usar
+- [X] Son tabulares, en una sola tabla
+- [X] No los hemos usado en clase
+- [X] Tienen más de 1.000 filas
+- [X] Tienen al menos 6 columnas, con números y con texto
+- [X] Entiendo qué es cada columna
+- [X] Hay algo que limpiar
+- [X] Sé de dónde salen y se pueden usar
 - [ ] El CSV limpio pesará menos de 100 MB
 
 ## 3. Tres preguntas que quiero responder
