@@ -9,6 +9,7 @@ Nombre: Erika
 Título del proyecto: El arte del lúpulo: datos, estilos y valoraciones de las cervezas
 
 ¿Qué pregunta responde y a quién le interesa?
+
 Este proyecto analiza qué características de una cerveza están más relacionadas con su valoración final, las diferencias entre los distintos estilos de cerveza y cómo influye la graduación alcohólica en las puntuaciones. 
 Puede interesar a los aficionados a la cerveza que quieran conocer mejor sus estilos y descubrir qué aspectos valoran más las personas que las prueban.
 
@@ -23,7 +24,7 @@ Enlace a los datos: https://www.kaggle.com/rdoume/beerreviews
 
 Cuántas filas y columnas tienen: 1.586.614 filas y 13 columnas.
 
-Qué es cada fila (un vino, un partido, una venta...):
+Qué es cada fila (un vino, un partido, una venta...): Cada fila representa una reseña, es decir, una persona que puntúa una cerveza. Por tanto, una misma cerveza puede aparecer en varias filas, ya que puede haber sido valorada por diferentes personas. Esto significa que el número de filas no equivale al número de cervezas únicas.
 
 Comprobado (los requisitos están en 03_DATOS.md):
 - [X] Son tabulares, en una sola tabla
@@ -50,14 +51,12 @@ Graduación alcohólica: para limitar el análisis a un intervalo de alcohol.
 Valoración general: para seleccionar las puntuaciones que nos interesan.
 Nombre de la cerveza: para buscar una cerveza concreta
 
-¿Qué pregunta le harías al usuario al final? (como "¿Cuánto cobrarías por tu piso?")
+¿Qué pregunta le harías al usuario al final?:
 
 ¿Cuál sería tu cerveza perfecta? y seleccionar  preferencias, por ejemplo:
-- Estilo: IPA, Stout, Lager, etc.
-- Graduación alcohólica: baja, media o alta.
-- Aroma: puntuación mínima deseada.
-- Sabor: puntuación mínima deseada.
-- Apariencia: puntuación mínima deseada.
+    - Estilo de cerveza: podrá seleccionar uno o varios estilos.
+    - Graduación alcohólica: podrá indicar sus preferencias respecto al contenido de alcohol.
+    - Nota mínima: podrá establecer la puntuación mínima que debe tener una cerveza.
 
 ¿Tienen coordenadas para hacer un mapa?
 - [ ] Sí
