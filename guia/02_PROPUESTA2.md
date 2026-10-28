@@ -6,8 +6,7 @@ Nombre: Erika
 
 ## 1. La idea
 
-Título del proyecto:
-El arte del lúpulo: datos, estilos y valoraciones de las cervezas
+Título del proyecto: El arte del lúpulo: datos, estilos y valoraciones de las cervezas
 
 ¿Qué pregunta responde y a quién le interesa?
 Este proyecto analiza qué características de una cerveza están más relacionadas con su valoración final, las diferencias entre los distintos estilos de cerveza y cómo influye la graduación alcohólica en las puntuaciones. 
@@ -62,10 +61,11 @@ Nombre de la cerveza: para buscar una cerveza concreta
 
 ¿Tienen coordenadas para hacer un mapa?
 - [ ] Sí
-- [X] No    # ¿quizás se puede meter otro csv que incluya un mapa?
+- [X] No
 
 ## 5. Plan B
 
-Por si los datos principales no sirven, otros distintos:
+Por si los datos principales no sirven, otros distintos: 
 
-Enlace:
+Cata de datos: explorando el mundo del vino
+Enlace: https://www.kaggle.com/datasets/zynicide/wine-reviews?utm_source=chatgpt.com
