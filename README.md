@@ -64,6 +64,12 @@ Enlace: (si la has publicado en Streamlit Community Cloud)
 2. El EDA está en `eda.ipynb`.
 3. La app se abre con `streamlit run app.py`.
 
+## Presentación del proyecto
+
+Puedes consultar la presentación completa del proyecto en PDF:
+
+[El arte del lúpulo – Presentación](presentacion/lupulo.pdf)
+
 ## Autor
 
 Erika Pinel Ortega 👽
