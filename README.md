@@ -1,50 +1,43 @@
 # El arte del lúpulo: datos, estilos y valoraciones de las cervezas
 
-El arte del lúpulo: datos, estilos y valoraciones de las cervezas
-
-Proyecto de análisis de datos con Python para explorar las valoraciones de distintas cervezas, estudiar sus características y descubrir qué factores pueden estar relacionados con las puntuaciones que reciben.
+Proyecto de análisis exploratorio de datos con Python para descubrir qué estilos de cerveza reciben mejores valoraciones, qué cervecerías acumulan más reseñas y qué relación existe entre la graduación alcohólica y las puntuaciones. Dirigido a aficionados a la cerveza y a quienes quieran explorar sus características y valoraciones.
 
 ## La pregunta
 
-1. ¿Qué características están relacionadas con la valoración general de una cerveza? 
-2. ¿Qué estilos reciben mejores puntuaciones?
-3. ¿Existe una relación entre la graduación alcohólica y la valoración?
+¿Qué podemos descubrir sobre las cervezas a partir de las reseñas de miles de consumidores?
 
-El objetivo es utilizar Python y el análisis exploratorio de datos (EDA) para investigar estas preguntas y, más adelante, desarrollar una aplicación que permita explorar cervezas según sus características.
+Para responderlo, investigaré tres cuestiones:
+
+1. ¿Qué estilos de cerveza reciben mejores valoraciones?
+2. ¿Qué cervecerías concentran un mayor número de reseñas?
+3. ¿Existe una relación entre la graduación alcohólica y la valoración de una cerveza?
 
 ## Los datos
 
-- De dónde salen: (https://www.kaggle.com/datasets/rdoume/beerreviews)
-- Cuántos son: 1.586.614 filas y 13 columnas en el conjunto original. Después de la limpieza, el conjunto contiene 1.518.829 filas y 10 columnas.
-- Qué es cada fila: una reseña de una cerveza. 
+- De dónde salen: [Beer Reviews – Kaggle](https://www.kaggle.com/datasets/rdoume/beerreviews)
+- Cuántos son: 1.586.614 filas y 13 columnas en el conjunto original. Después de la limpieza, 1.518.829 filas y 5 columnas.
+- Qué es cada fila: una reseña individual de una cerveza. Una misma cerveza puede aparecer en varias filas porque puede tener múltiples valoraciones.
 
 ## Qué he limpiado y por qué
 
-- He eliminado las columnas brewery_id, review_profilename y review_time, porque no eran necesarias para el análisis planteado.
-
-- He traducido al español los nombres de las diez columnas restantes para que sean más fáciles de interpretar.
-
-- He detectado 67.785 filas sin información sobre la graduación alcohólica y las he eliminado para poder analizar la relación entre esta variable y las valoraciones.
-
-- He conservado las valoraciones iguales a cero porque, aunque pueden ser valores atípicos, no hay información suficiente para afirmar que sean errores.
-
-- He revisado las distribuciones de las variables numéricas, los valores atípicos y la frecuencia de los distintos estilos de cerveza.
+- He seleccionado cinco columnas relevantes para el análisis: cervecería, valoración, estilo de cerveza, nombre de la cerveza y graduación alcohólica.
+- He traducido los nombres de las columnas al español para facilitar su comprensión.
+- He eliminado 67.785 filas que no contenían información sobre la graduación alcohólica, ya que necesitaba esta variable para estudiar su relación con las valoraciones.
+- He conservado las valoraciones iguales a cero porque no hay información suficiente para considerarlas errores.
 
 ## Lo que he encontrado
 
-1. Distribución de las valoraciones: la valoración general tiene una media de 3,82 y una mediana de 4 sobre 5. Esto indica que las puntuaciones se concentran, en general, en valores relativamente altos.
+1. Valoraciones por estilo: American Wild Ale obtiene la valoración media más alta, con 4,10 sobre 5. Le siguen Gueuze (4,09) y Quadrupel (4,07).
 
-2. Relación entre variables numéricas: la correlación de Pearson entre la graduación alcohólica y la valoración general es de aproximadamente 0,14. Se trata de una relación positiva débil, por lo que la graduación por sí sola no explica las diferencias entre las puntuaciones.
+2. Cervecerías con más reseñas: Boston Beer Company (Samuel Adams) encabeza la lista con 38.812 reseñas. Le siguen Dogfish Head Brewery (33.800) y Stone Brewing Co. (33.022).
 
-3. Diferencias entre grupos: la valoración media varía según el estilo de cerveza. American Wild Ale obtiene una media de 4,10, mientras que Low Alcohol Beer alcanza una media de 2,55. También se observa que las cervezas con una graduación superior al 9 % tienen una valoración media de 3,94, frente a 3,58 en las cervezas de hasta el 5 %.
-
-4. Limpieza de los datos: he eliminado tres columnas, he traducido los nombres de las diez columnas restantes y he eliminado las filas que no tenían información sobre la graduación alcohólica. El conjunto ha pasado de 1.586.614 a 1.518.829 filas.
+3. Relación entre graduación y valoración: la correlación de Pearson es de 0,14. Esto indica una relación positiva muy débil entre ambas variables. Una mayor graduación no implica necesariamente una mejor valoración.
 
 ## La app
 
 ![La app](capturas/app.png)
 
-(Qué se puede hacer en la app, en dos o tres frases.)
+La aplicación permitirá explorar cervezas según las preferencias del usuario. Se podrán seleccionar estilos, indicar una preferencia de graduación alcohólica y establecer una valoración mínima para encontrar cervezas que se ajusten a esos criterios.
 
 Enlace: (si la has publicado en Streamlit Community Cloud)
 
@@ -53,8 +46,6 @@ Enlace: (si la has publicado en Streamlit Community Cloud)
 1. Crear un entorno e instalar las librerías: `pip install -r requirements.txt`
 2. El EDA está en `eda.ipynb`.
 3. La app se abre con `streamlit run app.py`.
-
-## Autor
 
 ## Autor
 
