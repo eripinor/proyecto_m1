@@ -39,7 +39,7 @@ Para responderlo, investigaré tres cuestiones:
 
 ![La app](capturas/app.png)
 
-![Gráficos](capturas/graficos.png)
+![Gráficos](capturas/gráficos.png)
 
 ![Cerveza perfecta](capturas/cerveza_perfecta.png)
 
