@@ -23,21 +23,32 @@ Para responderlo, investigaré tres cuestiones:
 - He seleccionado cinco columnas relevantes para el análisis: cervecería, valoración, estilo de cerveza, nombre de la cerveza y graduación alcohólica.
 - He traducido los nombres de las columnas al español para facilitar su comprensión.
 - He eliminado 67.785 filas que no contenían información sobre la graduación alcohólica, ya que necesitaba esta variable para estudiar su relación con las valoraciones.
+- He conservado las 15 filas que no contenían información sobre la cervecería, identificando esos valores como "Desconocida".
 - He conservado las valoraciones iguales a cero porque no hay información suficiente para considerarlas errores.
+- He mantenido las filas coincidentes porque no puedo confirmar que sean reseñas duplicadas.
 
 ## Lo que he encontrado
 
-1. Valoraciones por estilo: American Wild Ale obtiene la valoración media más alta, con 4,10 sobre 5. Le siguen Gueuze (4,09) y Quadrupel (4,07).
+1. Valoraciones por estilo: American Wild Ale obtiene la valoración media más alta, con 4,10 sobre 5. Le siguen Gueuze (4,09) y Quadrupel (4,07). En el extremo opuesto, Low Alcohol Beer obtiene la media más baja, con 2,55.
 
 2. Cervecerías con más reseñas: Boston Beer Company (Samuel Adams) encabeza la lista con 38.812 reseñas. Le siguen Dogfish Head Brewery (33.800) y Stone Brewing Co. (33.022).
 
-3. Relación entre graduación y valoración: la correlación de Pearson es de 0,14. Esto indica una relación positiva muy débil entre ambas variables. Una mayor graduación no implica necesariamente una mejor valoración.
+3. Relación entre graduación y valoración: la correlación de Pearson es de 0,14 cuando se calcula por reseña y de 0,19 cuando se calcula por cerveza. Ambas indican una relación positiva muy débil. Aunque se observa una ligera tendencia a que las cervezas con mayor graduación reciban mejores valoraciones, no podemos afirmar que una mayor graduación implique una mejor puntuación.
 
 ## La app
 
 ![La app](capturas/app.png)
 
-La aplicación permitirá explorar cervezas según las preferencias del usuario. Se podrán seleccionar estilos, indicar una preferencia de graduación alcohólica y establecer una valoración mínima para encontrar cervezas que se ajusten a esos criterios.
+![Gráficos](capturas/graficos.png)
+
+![Cerveza perfecta](capturas/cerveza_perfecta.png)
+
+La aplicación permite explorar el conjunto de datos de cervezas mediante distintos filtros: estilo, graduación alcohólica, valoración mínima y nombre de la cerveza.
+
+Los resultados se muestran en tres pestañas:
+- **Listado:** permite consultar las cervezas que cumplen los filtros seleccionados.
+- **Gráficos:** muestra información visual sobre las cervezas encontradas y sus valoraciones medias por estilo.
+- **Cerveza perfecta:** permite seleccionar preferencias de estilo, graduación y valoración mínima para obtener recomendaciones. Solo se recomiendan cervezas con al menos 10 reseñas, para evitar resultados poco representativos.
 
 Enlace: (si la has publicado en Streamlit Community Cloud)
 
@@ -49,7 +60,7 @@ Enlace: (si la has publicado en Streamlit Community Cloud)
 
 ## Autor
 
-Erika Pinel Ortega
+Erika Pinel Ortega 👽
 
 - GitHub: [@eripinor](https://github.com/eripinor)
 - LinkedIn: [erika-pinel](https://www.linkedin.com/in/erika-pinel/)
