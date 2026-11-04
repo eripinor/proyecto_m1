@@ -16,7 +16,7 @@ st.set_page_config(
     page_icon="🍻",
     layout="wide")
 
-st.title("El arte del lúpulo: datos, estilos y valoraciones de las cervezas")
+st.title("🍻El arte del lúpulo: datos, estilos y valoraciones de las cervezas")
 
 st.write("Explora qué estilos reciben mejores valoraciones, qué cervecerías concentran más reseñas y si existe relación entre la graduación alcohólica y la valoración. Los datos proceden de Kaggle.")
 
@@ -28,7 +28,7 @@ st.write("Explora qué estilos reciben mejores valoraciones, qué cervecerías c
 
 @st.cache_data
 def cargar_datos():
-    cervezas = pd.read_csv("datos/datos_limpios.csv")  # leemos el CSV limpio
+    cervezas = pd.read_csv("datos/datos_limpios.csv.gz")  # leemos el CSV limpio
 
 # Calculamos la valoración media de cada cerveza
     valoraciones = cervezas.groupby(["cerveceria", "cerveza", "estilo_cerveza", "graduacion"])["rating"].mean().reset_index()
