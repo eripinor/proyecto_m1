@@ -1,8 +1,4 @@
-
-pandas: manipulación y análisis de datos.
-
-matplotlib: gráficos del notebook.
-
-streamlit: aplicación web.
-
-ipykernel: ejecución del notebook en Jupyter.
+pandas
+matplotlib
+streamlit
+ipykernel
