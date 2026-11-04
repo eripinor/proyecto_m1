@@ -65,19 +65,11 @@ with st.sidebar:
     graduacion_minima = float(cervezas_unicas["graduacion"].min())
     graduacion_maxima = float(cervezas_unicas["graduacion"].max())
 
-    graduacion_min, graduacion_max = st.slider(
-        "Graduación alcohólica",
-        graduacion_minima,
-        graduacion_maxima,
-        (graduacion_minima, graduacion_maxima)
-    )
+    graduacion_min, graduacion_max = st.slider("Graduación alcohólica", graduacion_minima, graduacion_maxima, (graduacion_minima, graduacion_maxima))
 
     valoracion = st.slider("Valoración mínima", 0.0, 5.0, 0.0, step=0.1)
 
     nombre = st.text_input("Buscar cerveza")
-
-    if st.button("Restablecer filtros"):
-        st.rerun()
 
 
 # Paso 4. Filtrar
