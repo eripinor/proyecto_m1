@@ -18,7 +18,7 @@ st.set_page_config(
 
 st.title("🍻El arte del lúpulo: datos, estilos y valoraciones de las cervezas")
 
-st.write("Explora qué estilos reciben mejores valoraciones, qué cervecerías concentran más reseñas y si existe relación entre la graduación alcohólica y la valoración. Los datos proceden de Kaggle.")
+st.write("Explora qué estilos reciben mejores valoraciones, qué cervecerías concentran más reseñas y si existe relación entre la graduación alcohólica y la valoración.")
 
 
 # Paso 2. Los datos
