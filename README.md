@@ -39,6 +39,8 @@ Para responderlo, investigaré tres cuestiones:
 
 ![La app](capturas/app.png)
 
+![Filtros](capturas/filtros.png)
+
 ![Gráficos](capturas/gráficos.png)
 
 ![Cerveza perfecta](capturas/cerveza_perfecta.png)
