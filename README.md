@@ -18,12 +18,6 @@ Para responderlo, investigaré tres cuestiones:
 - Cuántos son: 1.586.614 filas y 13 columnas en el conjunto original. Después de la limpieza, 1.518.829 filas y 5 columnas.
 - Qué es cada fila: una reseña individual de una cerveza. Una misma cerveza puede aparecer en varias filas porque puede tener múltiples valoraciones.
 
-## Archivo de datos
-
-El archivo CSV limpio (`datos/datos_limpios.csv`) ocupa aproximadamente 107 MB, por lo que no está incluido en el repositorio de GitHub.
-
-Si necesitas el archivo para ejecutar el proyecto, puedes solicitarlo al autor a través de los enlaces de contacto que aparecen al final de este README.
-
 ## Qué he limpiado y por qué
 
 - He seleccionado cinco columnas relevantes para el análisis: cervecería, valoración, estilo de cerveza, nombre de la cerveza y graduación alcohólica.
