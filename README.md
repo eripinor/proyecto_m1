@@ -50,7 +50,7 @@ Los resultados se muestran en tres pestañas:
 - **Gráficos:** muestra información visual sobre las cervezas encontradas y sus valoraciones medias por estilo.
 - **Cerveza perfecta:** permite seleccionar preferencias de estilo, graduación y valoración mínima para obtener recomendaciones. Solo se recomiendan cervezas con al menos 10 reseñas, para evitar resultados poco representativos.
 
-Enlace: (si la has publicado en Streamlit Community Cloud)
+Enlace: [Streamlit Community Cloud](https://arte-lupulo.streamlit.app/)
 
 ## Cómo ejecutarlo
 
