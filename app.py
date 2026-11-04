@@ -106,7 +106,7 @@ if len(filtrados) == 0:
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.metric("Cervezas encontradas", len(filtrados))
+    st.metric("Cervecerías", filtrados["cerveceria"].nunique())
 
 with col2:
     st.metric("Valoración media", round(filtrados["valoracion_media"].mean(), 2))
